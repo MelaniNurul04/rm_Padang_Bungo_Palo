@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan | RM Padang Bungo Palo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="melani_header">
+        <div class="melani_logo">RM Bungo Palo</div>
+
+        <div class="melani_menu_toggle" onclick="toggleMenu()">☰</div>
+
+        <nav class="melani_nav" id="melani_nav">
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="promo.html">Promo</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- JUDUL HALAMAN -->
+    <section class="melani_hero">
+        <h1>Menu Makanan</h1>
+        <p>Nikmati berbagai hidangan khas Minangkabau dengan cita rasa yang lezat.</p>
+    </section>
+
+    <!-- DAFTAR MENU -->
+    <section class="melani_section">
+
+        <h2 class="melani_section_title">Daftar Menu Kami</h2>
+
+        <!-- PENCARIAN -->
+        <div style="text-align:center; margin-bottom:25px;">
+            <input
+                type="text"
+                id="melani_search_menu"
+                class="melani_search"
+                placeholder="Cari nama makanan..."
+            >
+        </div>
+
+        <!-- KATEGORI -->
+        <div class="melani_category">
+            <button class="melani_btn" onclick="filterKategori('semua')">
+                Semua
+            </button>
+
+            <button class="melani_btn" onclick="filterKategori('lauk')">
+                Lauk
+            </button>
+
+            <button class="melani_btn" onclick="filterKategori('paket')">
+                Paket Nasi
+            </button>
+
+            <button class="melani_btn" onclick="filterKategori('minuman')">
+                Minuman
+            </button>
+        </div>
+
+        <!-- KARTU MENU -->
+        <div class="melani_menu_grid" id="melani_daftar_menu">
+
+            <div class="melani_card" data-nama="rendang" data-kategori="lauk">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554" alt="Rendang">
+                <div class="melani_card_content">
+                    <h3>Rendang Daging</h3>
+                    <p>Rendang daging dengan bumbu rempah khas Minangkabau.</p>
+                    <div class="melani_price">Rp28.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="melani_card" data-nama="ayam gulai" data-kategori="lauk">
+                <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398" alt="Ayam Gulai">
+                <div class="melani_card_content">
+                    <h3>Ayam Gulai</h3>
+                    <p>Ayam dengan kuah gulai santan yang kaya rempah.</p>
+                    <div class="melani_price">Rp22.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="melani_card" data-nama="nasi padang" data-kategori="paket">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" alt="Nasi Padang">
+                <div class="melani_card_content">
+                    <h3>Nasi Padang</h3>
+                    <p>Nasi putih dengan pilihan lauk dan sambal khas Padang.</p>
+                    <div class="melani_price">Rp32.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="melani_card" data-nama="ayam bakar" data-kategori="lauk">
+                <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b4b" alt="Ayam Bakar">
+                <div class="melani_card_content">
+                    <h3>Ayam Bakar</h3>
+                    <p>Ayam bakar dengan bumbu khas dan rasa gurih.</p>
+                    <div class="melani_price">Rp24.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="melani_card" data-nama="es teh manis" data-kategori="minuman">
+                <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc" alt="Es Teh Manis">
+                <div class="melani_card_content">
+                    <h3>Es Teh Manis</h3>
+                    <p>Minuman teh manis dingin yang menyegarkan.</p>
+                    <div class="melani_price">Rp5.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+            <div class="melani_card" data-nama="jeruk hangat" data-kategori="minuman">
+                <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e" alt="Jeruk Hangat">
+                <div class="melani_card_content">
+                    <h3>Jeruk Hangat</h3>
+                    <p>Minuman jeruk hangat dengan rasa segar.</p>
+                    <div class="melani_price">Rp8.000</div>
+                    <a href="detail.html" class="melani_btn">Lihat Detail</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="melani_tidak_ditemukan" style="display:none; text-align:center; margin-top:25px;">
+            Menu tidak ditemukan.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="melani_footer">
+        <p>&copy; 2026 RM Padang Bungo Palo. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- SCRIPT PENCARIAN DAN KATEGORI -->
+    <script>
+        const pencarian = document.getElementById("melani_search_menu");
+        const daftarMenu = document.querySelectorAll("#melani_daftar_menu .melani_card");
+        const pesanKosong = document.getElementById("melani_tidak_ditemukan");
+
+        let kategoriAktif = "semua";
+
+        function tampilkanMenu() {
+            const kataKunci = pencarian.value.toLowerCase();
+            let jumlahTampil = 0;
+
+            daftarMenu.forEach(function(menu) {
+                const nama = menu.dataset.nama;
+                const kategori = menu.dataset.kategori;
+
+                const cocokNama = nama.includes(kataKunci);
+                const cocokKategori =
+                    kategoriAktif === "semua" || kategori === kategoriAktif;
+
+                if (cocokNama && cocokKategori) {
+                    menu.style.display = "block";
+                    jumlahTampil++;
+                } else {
+                    menu.style.display = "none";
+                }
+            });
+
+            pesanKosong.style.display = jumlahTampil === 0 ? "block" : "none";
+        }
+
+        function filterKategori(kategori) {
+            kategoriAktif = kategori;
+            tampilkanMenu();
+        }
+
+        pencarian.addEventListener("input", tampilkanMenu);
+
+        function toggleMenu() {
+            document.getElementById("melani_nav").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

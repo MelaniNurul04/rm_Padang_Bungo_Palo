@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri | RM Padang Bungo Palo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="melani_header">
+        <div class="melani_logo">RM Bungo Palo</div>
+        <div class="melani_menu_toggle" onclick="toggleMenu()">☰</div>
+        <nav class="melani_nav" id="melani_nav">
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="promo.html">Promo</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="melani_hero">
+        <h1>Galeri Foto</h1>
+        <p>Lihat berbagai hidangan dan suasana RM Padang Bungo Palo.</p>
+    </section>
+
+    <section class="melani_section">
+        <h2 class="melani_section_title">Kumpulan Foto</h2>
+
+        <div class="melani_gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554"
+                alt="Hidangan makanan"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+                alt="Hidangan ayam"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1512058564366-18510be2db19"
+                alt="Nasi dan lauk"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5"
+                alt="Suasana restoran"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1532634896-26909d0d4b4b"
+                alt="Hidangan ayam bakar"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc"
+                alt="Minuman segar"
+            >
+
+        </div>
+    </section>
+
+    <footer class="melani_footer">
+        <p>&copy; 2026 RM Padang Bungo Palo. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("melani_nav").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

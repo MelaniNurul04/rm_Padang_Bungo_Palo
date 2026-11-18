@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | RM Padang Bungo Palo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="melani_header">
+        <div class="melani_logo">RM Bungo Palo</div>
+        <div class="melani_menu_toggle" onclick="toggleMenu()">☰</div>
+        <nav class="melani_nav" id="melani_nav">
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="promo.html">Promo</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="melani_hero">
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap menerima pertanyaan dan pesan dari Anda.</p>
+    </section>
+
+    <section class="melani_section">
+
+        <h2 class="melani_section_title">Informasi Kontak</h2>
+
+        <div class="melani_menu_grid">
+
+            <div class="melani_card">
+                <div class="melani_card_content">
+                    <h3>Alamat</h3>
+                    <p>Silakan isi alamat lengkap RM Padang Bungo Palo.</p>
+                </div>
+            </div>
+
+            <div class="melani_card">
+                <div class="melani_card_content">
+                    <h3>Nomor Telepon</h3>
+                    <p>Silakan isi nomor telepon rumah makan.</p>
+                </div>
+            </div>
+
+            <div class="melani_card">
+                <div class="melani_card_content">
+                    <h3>Jam Operasional</h3>
+                    <p>Silakan isi jam buka dan tutup rumah makan.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="melani_section">
+
+        <h2 class="melani_section_title">Kirim Pesan</h2>
+
+        <div class="melani_contact">
+
+            <form id="melani_form_kontak">
+
+                <label for="melani_nama">Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="melani_nama"
+                    placeholder="Masukkan nama lengkap"
+                    required
+                >
+
+                <label for="melani_email">Email</label>
+                <input
+                    type="email"
+                    id="melani_email"
+                    placeholder="Masukkan alamat email"
+                    required
+                >
+
+                <label for="melani_subjek">Subjek</label>
+                <input
+                    type="text"
+                    id="melani_subjek"
+                    placeholder="Masukkan subjek pesan"
+                    required
+                >
+
+                <label for="melani_pesan">Pesan</label>
+                <textarea
+                    id="melani_pesan"
+                    rows="6"
+                    placeholder="Tuliskan pesan Anda"
+                    required
+                ></textarea>
+
+                <button type="submit" class="melani_btn">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+            <p id="melani_status_pesan" style="margin-top:15px;"></p>
+
+        </div>
+
+    </section>
+
+    <footer class="melani_footer">
+        <p>&copy; 2026 RM Padang Bungo Palo. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("melani_nav").classList.toggle("active");
+        }
+
+        document.getElementById("melani_form_kontak")
+            .addEventListener("submit", function(event) {
+
+                event.preventDefault();
+
+                document.getElementById("melani_status_pesan").textContent =
+                    "Pesan berhasil diperiksa. Formulir ini masih berupa demo dan belum terhubung ke sistem pengiriman pesan.";
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>

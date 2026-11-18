@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Menu | RM Padang Bungo Palo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="melani_header">
+        <div class="melani_logo">RM Bungo Palo</div>
+        <div class="melani_menu_toggle" onclick="toggleMenu()">☰</div>
+        <nav class="melani_nav" id="melani_nav">
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="promo.html">Promo</a>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="melani_hero">
+        <h1>Detail Menu</h1>
+        <p>Kenali lebih dekat hidangan khas RM Padang Bungo Palo.</p>
+    </section>
+
+    <section class="melani_section">
+        <h2 class="melani_section_title">Rendang Daging</h2>
+
+        <div class="melani_detail">
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554"
+                alt="Rendang Daging"
+            >
+
+            <div>
+                <h2>Rendang Daging</h2>
+                <p>
+                    Rendang daging merupakan salah satu hidangan khas
+                    Minangkabau yang dimasak menggunakan santan dan
+                    berbagai rempah pilihan.
+                </p>
+
+                <p>
+                    Hidangan ini memiliki cita rasa gurih dan kaya bumbu.
+                    Cocok dinikmati bersama nasi putih hangat.
+                </p>
+
+                <div class="melani_price">Rp28.000</div>
+
+                <p><strong>Kategori:</strong> Lauk</p>
+                <p><strong>Jenis:</strong> Makanan khas Padang</p>
+
+                <a href="menu.html" class="melani_btn">Kembali ke Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="melani_footer">
+        <p>&copy; 2026 RM Padang Bungo Palo. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="index.html">Beranda</a>
+            <a href="menu.html">Menu</a>
+            <a href="kontak.html">Kontak</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("melani_nav").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

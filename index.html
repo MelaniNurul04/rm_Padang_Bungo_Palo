@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RM Padang Bungo Palo</title>
+
+    <meta name="description" content="Pesan makanan khas Padang di RM Bungo Palo.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="melani_header">
+
+        <a href="index.html" class="melani_logo">
+            <span class="melani_logo_icon">BP</span>
+
+            <span>
+                <strong>BUNGO PALO</strong>
+                <small>RUMAH MAKAN PADANG</small>
+            </span>
+        </a>
+
+        <button
+            class="melani_toggle"
+            id="melani_toggle"
+            aria-label="Buka menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="melani_nav" id="melani_nav">
+
+            <a href="index.html" class="melani_active">
+                Beranda
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="promo.html">
+                Promo
+            </a>
+
+            <a href="tentang.html">
+                Tentang
+            </a>
+
+            <a href="galeri.html">
+                Galeri
+            </a>
+
+            <a href="kontak.html">
+                Kontak
+            </a>
+
+        </nav>
+
+        <a href="menu.html" class="melani_header_button">
+            Pesan Sekarang
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="melani_hero">
+
+            <div class="melani_hero_content">
+
+                <span class="melani_label">
+                    SELAMAT DATANG DI BUNGO PALO
+                </span>
+
+                <h1>
+                    Nikmati Cita Rasa
+                    <span>Asli Minangkabau</span>
+                </h1>
+
+                <p>
+                    Sajian khas Padang dengan rempah pilihan,
+                    rasa autentik, dan hidangan yang selalu
+                    menggugah selera.
+                </p>
+
+                <div class="melani_hero_buttons">
+
+                    <a href="menu.html" class="melani_button">
+                        Lihat Menu
+                    </a>
+
+                    <a href="tentang.html" class="melani_button_outline">
+                        Tentang Kami
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="melani_hero_image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+                    alt="Hidangan khas rumah makan">
+
+                <div class="melani_image_badge">
+                    <strong>Rasa Khas Minang</strong>
+                    <span>Lezat dan menggugah selera</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PENCARIAN MENU -->
+        <section class="melani_search_section">
+
+            <div class="melani_search_heading">
+
+                <h2>Cari Menu Favoritmu</h2>
+
+                <p>
+                    Temukan hidangan yang ingin kamu nikmati.
+                </p>
+
+            </div>
+
+            <form class="melani_search_box" id="melani_search_form">
+
+                <input
+                    type="search"
+                    id="melani_search"
+                    placeholder="Cari rendang, ayam gulai, nasi padang..."
+                    aria-label="Cari menu makanan">
+
+                <button type="submit">
+                    Cari Menu
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- KATEGORI -->
+        <section class="melani_category_section">
+
+            <div class="melani_section_heading">
+
+                <span class="melani_label">
+                    PILIH SESUAI SELERA
+                </span>
+
+                <h2>Kategori Menu</h2>
+
+                <p>
+                    Berbagai pilihan hidangan untuk menemani
+                    waktu makanmu.
+                </p>
+
+            </div>
+
+            <div class="melani_category_list">
+
+                <a href="menu.html" class="melani_category_item">
+                    <span>🍛</span>
+                    <strong>Semua Menu</strong>
+                </a>
+
+                <a href="menu.html?kategori=lauk" class="melani_category_item">
+                    <span>🍗</span>
+                    <strong>Lauk</strong>
+                </a>
+
+                <a href="menu.html?kategori=paket" class="melani_category_item">
+                    <span>🍚</span>
+                    <strong>Paket Nasi</strong>
+                </a>
+
+                <a href="menu.html?kategori=minuman" class="melani_category_item">
+                    <span>🥤</span>
+                    <strong>Minuman</strong>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU FAVORIT -->
+        <section class="melani_menu_section">
+
+            <div class="melani_section_heading">
+
+                <span class="melani_label">
+                    PILIHAN PELANGGAN
+                </span>
+
+                <h2>Menu Favorit Bungo Palo</h2>
+
+                <p>
+                    Nikmati berbagai hidangan khas
+                    Minangkabau dengan cita rasa istimewa.
+                </p>
+
+            </div>
+
+            <div class="melani_product_grid" id="melani_product_grid">
+
+                <!-- PRODUK 1 -->
+                <article
+                    class="melani_product_card"
+                    data-name="rendang daging"
+                    data-category="lauk">
+
+                    <div class="melani_product_image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=85"
+                            alt="Rendang Daging">
+
+                        <span class="melani_product_tag">
+                            Favorit
+                        </span>
+
+                    </div>
+
+                    <div class="melani_product_content">
+
+                        <span class="melani_product_category">
+                            LAUK
+                        </span>
+
+                        <h3>Rendang Daging</h3>
+
+                        <p>
+                            Daging empuk dengan bumbu rempah
+                            khas Minangkabau.
+                        </p>
+
+                        <div class="melani_product_bottom">
+
+                            <strong>Rp28.000</strong>
+
+                            <a href="detail.html" class="melani_detail_button">
+                                Detail
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUK 2 -->
+                <article
+                    class="melani_product_card"
+                    data-name="ayam gulai"
+                    data-category="lauk">
+
+                    <div class="melani_product_image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=85"
+                            alt="Ayam Gulai">
+
+                    </div>
+
+                    <div class="melani_product_content">
+
+                        <span class="melani_product_category">
+                            LAUK
+                        </span>
+
+                        <h3>Ayam Gulai</h3>
+
+                        <p>
+                            Ayam dengan kuah santan
+                            yang gurih dan kaya rempah.
+                        </p>
+
+                        <div class="melani_product_bottom">
+
+                            <strong>Rp22.000</strong>
+
+                            <a href="detail.html" class="melani_detail_button">
+                                Detail
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUK 3 -->
+                <article
+                    class="melani_product_card"
+                    data-name="nasi padang komplit"
+                    data-category="paket">
+
+                    <div class="melani_product_image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=85"
+                            alt="Nasi Padang Komplit">
+
+                    </div>
+
+                    <div class="melani_product_content">
+
+                        <span class="melani_product_category">
+                            PAKET NASI
+                        </span>
+
+                        <h3>Nasi Padang Komplit</h3>
+
+                        <p>
+                            Nasi hangat dengan lauk,
+                            sayur, dan sambal pilihan.
+                        </p>
+
+                        <div class="melani_product_bottom">
+
+                            <strong>Rp32.000</strong>
+
+                            <a href="detail.html" class="melani_detail_button">
+                                Detail
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUK 4 -->
+                <article
+                    class="melani_product_card"
+                    data-name="ayam bakar"
+                    data-category="lauk">
+
+                    <div class="melani_product_image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=85"
+                            alt="Ayam Bakar">
+
+                    </div>
+
+                    <div class="melani_product_content">
+
+                        <span class="melani_product_category">
+                            LAUK
+                        </span>
+
+                        <h3>Ayam Bakar</h3>
+
+                        <p>
+                            Ayam berbumbu dengan aroma
+                            bakaran yang menggugah selera.
+                        </p>
+
+                        <div class="melani_product_bottom">
+
+                            <strong>Rp24.000</strong>
+
+                            <a href="detail.html" class="melani_detail_button">
+                                Detail
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="melani_center">
+
+                <a href="menu.html" class="melani_button">
+                    Lihat Semua Menu
+                </a>
+
+            </div>
+
+            <p id="melani_search_result" class="melani_search_result"></p>
+
+        </section>
+
+
+        <!-- PROMO -->
+        <section class="melani_promo_section">
+
+            <div class="melani_promo_content">
+
+                <span class="melani_label">
+                    PENAWARAN SPESIAL
+                </span>
+
+                <h2>
+                    Makan Bersama
+                    Jadi Lebih Menyenangkan
+                </h2>
+
+                <p>
+                    Nikmati pilihan paket makanan
+                    untuk menemani waktu makan
+                    bersama keluarga dan teman.
+                </p>
+
+                <a href="promo.html" class="melani_button_light">
+                    Lihat Promo
+                </a>
+
+            </div>
+
+            <div class="melani_promo_image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"
+                    alt="Suasana tempat makan">
+
+            </div>
+
+        </section>
+
+
+        <!-- TENTANG -->
+        <section class="melani_about_section">
+
+            <div class="melani_about_image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                    alt="Hidangan khas Minangkabau">
+
+            </div>
+
+            <div class="melani_about_content">
+
+                <span class="melani_label">
+                    TENTANG KAMI
+                </span>
+
+                <h2>Kenikmatan Masakan Khas Minang</h2>
+
+                <p>
+                    RM Padang Bungo Palo menghadirkan
+                    berbagai hidangan khas Minangkabau
+                    dengan pilihan menu yang beragam.
+                </p>
+
+                <p>
+                    Melalui website ini, pelanggan dapat
+                    melihat menu, mengetahui promo,
+                    dan memperoleh informasi rumah makan.
+                </p>
+
+                <a href="tentang.html" class="melani_button">
+                    Selengkapnya
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- KONTAK -->
+        <section class="melani_contact_banner">
+
+            <h2>Ingin Mengetahui Informasi Lebih Lanjut?</h2>
+
+            <p>
+                Hubungi kami untuk mendapatkan
+                informasi mengenai menu dan layanan.
+            </p>
+
+            <a href="kontak.html" class="melani_button">
+                Hubungi Kami
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="melani_footer">
+
+        <div class="melani_footer_grid">
+
+            <div class="melani_footer_about">
+
+                <h2>BUNGO PALO</h2>
+
+                <p>RUMAH MAKAN PADANG</p>
+
+                <p>
+                    Menghadirkan hidangan khas
+                    Minangkabau dengan cita rasa
+                    yang menggugah selera.
+                </p>
+
+            </div>
+
+            <div class="melani_footer_links">
+
+                <h3>Navigasi</h3>
+
+                <a href="index.html">Beranda</a>
+                <a href="menu.html">Menu</a>
+                <a href="promo.html">Promo</a>
+                <a href="tentang.html">Tentang Kami</a>
+
+            </div>
+
+            <div class="melani_footer_links">
+
+                <h3>Informasi</h3>
+
+                <a href="galeri.html">Galeri</a>
+                <a href="kontak.html">Kontak</a>
+
+            </div>
+
+        </div>
+
+        <div class="melani_footer_bottom">
+
+            <p>
+                © 2026 RM Padang Bungo Palo.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
