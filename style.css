@@ -794,3 +794,47 @@ img {
     }
 
 }
+
+
+/* INFORMASI KONTAK */
+
+.melani_contact {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.melani_contact_item {
+    background-color: #fffaf2;
+    padding: 20px;
+    border-left: 4px solid #800020;
+    border-radius: 8px;
+}
+
+.melani_contact_item h3 {
+    color: #800020;
+    margin-bottom: 8px;
+}
+
+.melani_contact_item p {
+    color: #444;
+}
+
+.melani_contact_item a {
+    color: #800020;
+    font-weight: bold;
+}
+
+.melani_contact_item a:hover {
+    color: #a52a2a;
+}
+
+@media (max-width: 600px) {
+    .melani_contact {
+        grid-template-columns: 1fr;
+    }
+}
