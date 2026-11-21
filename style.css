@@ -1,4 +1,3 @@
-
 /* =====================================
    1. PENGATURAN DASAR
 ===================================== */
@@ -835,6 +834,94 @@ img {
 
 @media (max-width: 600px) {
     .melani_contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =====================================
+   HALAMAN GALERI
+===================================== */
+
+.melani_page_hero {
+    padding: 55px 8%;
+    background-color: #f5ebdf;
+    text-align: center;
+}
+
+.melani_page_hero h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    color: #762b25;
+    margin-bottom: 10px;
+}
+
+.melani_page_hero p {
+    color: #766960;
+}
+
+.melani_section {
+    padding: 55px 8%;
+}
+
+.melani_section_title {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: #762b25;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.melani_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.melani_gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #eee2d6;
+    transition: 0.3s;
+}
+
+.melani_gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 1000px) {
+    .melani_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .melani_page_hero {
+        padding: 40px 6%;
+    }
+
+    .melani_page_hero h1 {
+        font-size: 30px;
+    }
+
+    .melani_section {
+        padding: 40px 5%;
+    }
+
+    .melani_gallery {
+        gap: 12px;
+    }
+
+    .melani_gallery img {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .melani_gallery {
         grid-template-columns: 1fr;
     }
 }
